@@ -1,4 +1,5 @@
 'use client'
+
 import React from 'react'
 import { availableCourseDetails } from '@/data'
 import { useRouter } from 'next/navigation'
@@ -13,7 +14,7 @@ const index = ({ params }) => {
 		<div className='mt-8'>
 
 			{
-				coursedata.map(course => <div key={course.id} className="max-w-2xl mx-auto p-4 bg-gray-900 text-white rounded border">
+				coursedata.map(course => <div key={course.id} className={`max-w-2xl mx-auto p-4 bg-gray-900 text-white rounded border ${(coursedata.length > 1) && 'mt-3'}`}>
 					<h1 className="text-2xl font-bold mb-2">{course.title}</h1>
 
 					<div className="mb-4">
