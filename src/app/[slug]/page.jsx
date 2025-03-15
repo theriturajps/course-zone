@@ -13,7 +13,7 @@ const index = ({ params }) => {
 		<div className='mt-8'>
 
 			{
-				coursedata.map(course => <div key={course.id} className="max-w-2xl mx-auto p-4 accent-black rounded border">
+				coursedata.map(course => <div key={course.id} className="max-w-2xl mx-auto p-4 bg-gray-900 text-white rounded border">
 					<h1 className="text-2xl font-bold mb-2">{course.title}</h1>
 
 					<div className="mb-4">
@@ -31,7 +31,7 @@ const index = ({ params }) => {
 					</div>
 
 					<div className="mt-4">
-						<button onClick={() => router.refresh()} className="bg-blue-500 text-white py-1 px-2 rounded">Enroll Now</button>
+						<button onClick={() => router.refresh()} className="bg-yellow-400 text-gray-900 font-semibold py-1 px-2 rounded">Enroll Now</button>
 					</div>
 				</div>)
 			}
